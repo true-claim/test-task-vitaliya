@@ -13,8 +13,8 @@
 ```
 
 Ручка: 
-  api/balance/update
-  {"userId": /* number */, "amount": /* number or —number */}
+api/balance/update
+{"userId": number, "amount": number or —number }
 
 
 
