@@ -13,7 +13,10 @@
 ```
 
 Ручка: 
+PUT
+
 api/balance/update
+
 {"userId": number, "amount": number or —number }
 
 
