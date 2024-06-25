@@ -15,8 +15,8 @@ async function main() {
     app.use('/api', balanceRouter);
     app.listen(port, () => logger.info(`Server run http://localhost:${port}`));
 
-    await syncModels();
-    await createDefaultUser()
+    // await syncModels();
+    // await createDefaultUser()
 }
 
 main()

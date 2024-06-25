@@ -26,8 +26,17 @@ const userModelConfig = {
     }
 }
 
+const modelIndex = {
+    indexes: [
+        {
+            unique: true,
+            fields: ['userId']
+        }
+    ]
+}
+
 class User extends Model { }
-User.init(userModelConfig, { sequelize, modelName: 'user' })
+User.init(userModelConfig, { ...modelIndex, sequelize, modelName: 'user' })
 
 async function createDefaultUser() {
     try {
@@ -45,4 +54,4 @@ async function createDefaultUser() {
     }
 }
 
-module.exports = { createDefaultUser, userModelConfig, User }
+module.exports = { createDefaultUser, userModelConfig, modelIndex, User }

@@ -9,9 +9,9 @@ function makeLogger(name) {
             '{{hh}}:{{MM}}:{{ss}}\t{{logLevelName}}\t{{name}}\t',
     });
 
-    logger.attachTransport((logObj) => {
-        appendFileSync('./logs/log.txt', JSON.stringify(logObj) + '\n');
-    });
+    // logger.attachTransport((logObj) => {
+    //     appendFileSync('./logs/log.txt', JSON.stringify(logObj) + '\n');
+    // });
 
     return logger;
 }

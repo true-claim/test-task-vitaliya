@@ -16,7 +16,7 @@
 
 ```json
   api/balance/update
-  {"userId": , "amount": }
+  {"userId": /* number */, "amount": /* number or —number */}
 ```
 
 

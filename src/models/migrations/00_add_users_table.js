@@ -1,7 +1,7 @@
-const { userModelConfig } = require('../user.model.js');
+const { userModelConfig, modelIndex } = require('../user.model.js');
 
 const up = async ({ context: queryInterface }) => {
-    await queryInterface.createTable('users', userModelConfig);
+    await queryInterface.createTable('users', userModelConfig, modelIndex);
 };
 
 async function down({ context: queryInterface }) {
