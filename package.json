@@ -2,7 +2,9 @@
   "name": "express-webapp",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node src/main.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
